@@ -1,27 +1,27 @@
 # README
 
-## Импорт данных newegg.com
+## Import data from newegg.com
 
-Если запускать проект из IntelliJ IDEA, то конфигурация выглядит так:
+If you running app from IntelliJ IDEA, you config should be like this:
 ```
 Main class: com.fiftin.xpathcrawler.Main
-Program arguments: <путь-к-xpathcrawler>\src\test\resources\com\fiftin\xpathcrawler\newegg-single.json --parallel=10 --output=IMPORT --dir=<путь-к-дампу-www.newegg.com>\Product
+Program arguments: <path-to-xpathcrawler>\src\test\resources\com\fiftin\xpathcrawler\newegg-single.json --parallel=10 --output=IMPORT --dir=<path-to-dump-www.newegg.com>\Product
 ```
 
-## Импорт данных bhphotovideo.com
+## Import data from bhphotovideo.com
 ```
 Main class: com.fiftin.xpathcrawler.Main
-Program arguments: <путь-к-xpathcrawler>\src\test\resources\com\fiftin\xpathcrawler\bhphotovideo-single.json --parallel=10 --output=IMPORT --dir=<путь-к-дампу-www.bhphotovideo.com>\Product
+Program arguments: <path-to-xpathcrawler>\src\test\resources\com\fiftin\xpathcrawler\bhphotovideo-single.json --parallel=10 --output=IMPORT --dir=<path-to-dump-www.bhphotovideo.com>\Product
 ```
 
 
-## Конфигурирование
+## Configuration
 Файл конфигурации имеет JSON-формат. В конфигурационном файле указываются: 
 * **url** - адрес или алгоритм определния адреса страниц для разбора. Может быть текстовым полем, а может быть блоком.
 * **content** - набор пар "имя поля" - "путь к значению на странце заданный в XPath формате".
 * **content-order** - массив имен полей в порядке вывода на печать. Актуально при выводе например в формате CSV.
 
-### Конфигурация для разбора 1 страницы
+### Configuration for parsing single page
 Ниже приведен пример конфигурационного файла для разбора страницы **test-doc-1.html**.
 ```
 {
@@ -40,7 +40,7 @@ Program arguments: <путь-к-xpathcrawler>\src\test\resources\com\fiftin\xpat
   ]
 }
 ```
-### Конфигурация для разбора нескольких страниц последовательно с N по M
+### Configuration for parsing pages from N to M
 Ниже приведен пример разбора набора страниц с 1 по 45500.
 Поле **url** имеет формат **чать адреса{0}другая чать адреса**.
 Программа в цикле перебирает все страницы с 1 по 45500, подставляя вмесво {0} 
