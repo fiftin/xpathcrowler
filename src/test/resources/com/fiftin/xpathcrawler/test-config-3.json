@@ -1,0 +1,26 @@
+{
+  "url" : "file:./test-config-3.json",
+  "content" : {
+    "Address" : {
+      "path" : "//table/tr",
+      "sequence" : [
+        {
+          "path" : "./td[@class='address' and position()=1]",
+          "repetitions" : 1,
+          "save-to-var" : "name"
+        },
+        {
+          "path" : "./td[1]",
+          "repetitions" : 1
+        },
+        {
+          "path" : "./td[@class='addr-value']",
+          "save-to-db-format" : "{name} {0}"
+        }
+      ]
+    }
+  },
+  "content-order" : [
+    "Address"
+  ]
+}

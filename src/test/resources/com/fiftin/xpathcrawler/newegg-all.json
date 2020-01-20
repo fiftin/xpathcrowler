@@ -1,0 +1,194 @@
+[
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[1]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[2]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[3]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[4]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[5]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[6]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[7]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[8]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[9]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[10]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[11]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  },
+  {
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "source-url": "https://www.newegg.com",
+      "link-path": "//div[@id='main-nav-menu-list']/ul[@class='main-nav-categories']/li[12]//dd[@class='main-nav-subItem']//li[@class='main-nav-third-item']/a",
+      "start-index" : 1,
+      "end-index" : 1000,
+      "override-url": { "replace": ["?Tid=", "/Page-{0}?Tid="] },
+      "url": {
+        "link-path": "//a[@class='item-title']",
+        "break-if-not-found": true,
+        "include-content": "C:/Users/denis/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json"
+      }
+    }
+  }
+]

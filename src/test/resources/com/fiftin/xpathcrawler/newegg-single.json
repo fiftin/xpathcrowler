@@ -1,0 +1,27 @@
+{
+  "url": "https://www.newegg.com/Product/Product.aspx?Item=N82E16832138609",
+  "content": {
+    "originBreadCrumbTmp": ["regex", "^[^>]+\\>(.*)\\>[^>]+$", "//div[@id='baBreadcrumbTop']"],
+    "originBreadCrumb": ["replace", "\\W*>\\W*", "/", "{originBreadCrumbTmp}"],
+    "url": ["const", "{url}"],
+    "name": "//h1[@id='grpDescrip_h']/span[@itemprop='name']",
+    "description": ["regex", "^(.*)$", "//div[@class='grpBullet']/ul[@class='itemColumn']", "\n"],
+    "price": "//meta[@itemprop='price']/@content",
+    "originId": "//div[@id='baBreadcrumbTop']//dd[last()]/em",
+    "images": [
+      "replace",
+      "/ProductImageCompressAll[\\d]*/",
+      "/productimage/",
+      "//div[@id='synopsis']//div[@class='objImages']/ul[@class='navThumbs']/li/a/img/@src"]
+  },
+  "content-order": [
+    "originBreadCrumbTmp",
+    "originBreadCrumb",
+    "url",
+    "name",
+    "description",
+    "price",
+    "originId",
+    "images"
+  ]
+}

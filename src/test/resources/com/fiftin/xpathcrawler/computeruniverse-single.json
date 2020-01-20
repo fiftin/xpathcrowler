@@ -1,0 +1,13 @@
+{
+  "url": "https://www.computeruniverse.net/en/products/90676510/hp-255-g5-sp-w4m49es.asp",
+  "content": {
+    "originBreadCrumb": "//div[@id='baBreadcrumbTop']",
+    "url": ["const", "{url}"],
+    "name": "//h1[@class='producttitle']"
+  },
+  "content-order": [
+    "originBreadCrumb",
+    "url",
+    "name"
+  ]
+}

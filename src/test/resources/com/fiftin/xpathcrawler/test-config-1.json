@@ -1,0 +1,9 @@
+{
+  "url" : "file:./test-config-1.json",
+  "content" : {
+    "Address" : "//tr[starts-with(td, 'Address')]/td[2]",
+    "Phone" : "//tr[starts-with(td, 'Phone')]/td[2]",
+    "Email" : "//div[@class='e']/table/tr[position()>1]/td[1]",
+    "Fax" : "//div[@class='e']/table/tr[position()>1]/td[2]"
+  }
+}

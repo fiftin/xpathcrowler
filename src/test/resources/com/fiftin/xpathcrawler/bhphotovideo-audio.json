@@ -1,0 +1,33 @@
+{
+  "start-index" : 1,
+  "end-index" : 1,
+  "url": {
+    "source-url": "https://www.bhphotovideo.com/c/browse/Professional-Audio/ci/12154/N/4294550705",
+    "link-path": "//div[@class='clp-categoryGroups']//ul/li[@data-selenium='category']/a[@data-selenium='categoryLink']",
+    "start-index" : 1,
+    "end-index" : 1000,
+    "override-url": { "replace": ["/N/", "/pn/{0}/N/"] },
+    "url": {
+      "link-path": "//div[@data-selenium='items']/div[@data-selenium='itemDetail']//a[@data-selenium='itemHeadingLink']",
+      "break-if-not-found": true,
+      "content": {
+        "url": ["const", "{url}"],
+        "name": "//title",
+        "description": "//div[@class='ov-desc']",
+        "json": "//div[@data-selenium='mainItem']/div[@data-selenium='topPage']/@data-itemdata",
+        "images": [
+          "replace",
+          "/thumbnails/",
+          "/images500x500/",
+          "//div[@data-selenium='mainItem']//div[@data-selenium='productThumbnail']/a[@data-selenium='smallImgLink']/img[@class='js-lazyImage']/@data-src"]
+      },
+      "content-order": [
+        "url",
+        "name",
+        "description",
+        "json",
+        "images"
+      ]
+    }
+  }
+}

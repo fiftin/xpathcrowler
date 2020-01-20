@@ -1,0 +1,8 @@
+{
+  "url": {
+    "source-url": "https://en.wikipedia.org/wiki/Federal_subjects_of_Russia",
+    "link-path": "//table[@class='wikitable sortable']/tr/td[2]/a",
+    "override-url": { "prepend": "https://en.wikipedia.org" },
+    "include-content": "D:/src/xpathcrawler/src/test/resources/com/fiftin/xpathcrawler/wiki-ru-region-en.json"
+  }
+}

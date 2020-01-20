@@ -1,0 +1,33 @@
+{
+  "url": "https://en.wikipedia.org/wiki/Moscow",
+  "content": {
+    "$center":         "//th[text()='Administrative center']/ancestor::tr/td//a",
+    "$capital":        ["default", "{$center}", "//th[text()='Capital']/ancestor::tr/td//a"],
+    "$wikiCenterURL":   "//th[text()='Administrative center']/ancestor::tr/td//a/@href",
+    "$wikiCapitalURL_":["default", "{$wikiCenterURL}", "//th[text()='Capital']/ancestor::tr/td//a/@href"],
+    "$wikiCapitalURL": ["default", "{$wikiCapitalURL_}", "//th/a[text()='Capital']/ancestor::tr/td//a/@href"],
+
+    "wikiURL":         ["const", "{url}"],
+    "name":            "//h1[@id='firstHeading']",
+    "capital":         ["default", "{$capital}", "//th/a[text()='Capital']/ancestor::tr/td//a"],
+
+    "wikiCapitalURL":  ["prepend", "https://en.wikipedia.org", "{$wikiCapitalURL}"],
+    "$name$":           ["regex", "^(\\d+).*", "//a[text()='License plates']/ancestor::tr/td"],
+    "$name":           ["replace", "95", "20", "{$name$}"]
+  },
+
+  "content-order": [
+    "$center",
+    "$capital",
+    "$wikiCenterURL",
+    "$wikiCapitalURL_",
+    "$wikiCapitalURL",
+
+    "wikiURL",
+    "name",
+    "capital",
+    "wikiCapitalURL",
+    "$name$",
+    "$name"
+  ]
+}

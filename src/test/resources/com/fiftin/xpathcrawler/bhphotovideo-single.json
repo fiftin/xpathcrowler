@@ -1,0 +1,25 @@
+[
+  {
+    "url": "https://www.bhphotovideo.com/c/product/1274705-REG/canon_eos_5d_mark_iv.html",
+    "content": {
+      "originBreadCrumb": ["regex", "^[^/]*/(.*)/[^/]*$", "//div[@data-selenium='breadcrumbs']", "/"],
+      "url": ["const", "{url}"],
+      "name": "//title",
+      "description": "//div[@class='ov-desc']",
+      "json": "//div[@data-selenium='mainItem']/div[@data-selenium='topPage']/@data-itemdata",
+      "images": [
+        "replace",
+        "/thumbnails/",
+        "/images500x500/",
+        "//div[@data-selenium='mainItem']//div[@data-selenium='productThumbnail']/a[@data-selenium='smallImgLink']/img[@class='js-lazyImage']/@data-src"]
+    },
+    "content-order": [
+      "originBreadCrumb",
+      "url",
+      "name",
+      "description",
+      "json",
+      "images"
+    ]
+  }
+]

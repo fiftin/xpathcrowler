@@ -1,0 +1,37 @@
+{
+  "comment": "Not Completed!!! Start from https://www.bhphotovideo.com/c/browse/gaming/ci/24607/pn/1/N/3838122498",
+
+  "start-index" : 1,
+  "end-index" : 1,
+  "url": {
+    "source-url": "https://www.bhphotovideo.com/c/browse/Home-Entertainment/ci/4600/N/4294544179",
+    "delay": 5000,
+    "link-path": "//div[@class='clp-categoryGroups']//ul/li[@data-selenium='category']/a[@data-selenium='categoryLink']",
+    "start-index" : 1,
+    "end-index" : 1000,
+    "override-url": { "replace": ["/N/", "/pn/{0}/N/"] },
+    "url": {
+      "delay": 5000,
+      "link-path": "//div[@data-selenium='items']/div[@data-selenium='itemDetail']//a[@data-selenium='itemHeadingLink']",
+      "break-if-not-found": true,
+      "content": {
+        "url": ["const", "{url}"],
+        "name": "//title",
+        "description": "//div[@class='ov-desc']",
+        "json": "//div[@data-selenium='mainItem']/div[@data-selenium='topPage']/@data-itemdata",
+        "images": [
+          "replace",
+          "/thumbnails/",
+          "/images500x500/",
+          "//div[@data-selenium='mainItem']//div[@data-selenium='productThumbnail']/a[@data-selenium='smallImgLink']/img[@class='js-lazyImage']/@data-src"]
+      },
+      "content-order": [
+        "url",
+        "name",
+        "description",
+        "json",
+        "images"
+      ]
+    }
+  }
+}

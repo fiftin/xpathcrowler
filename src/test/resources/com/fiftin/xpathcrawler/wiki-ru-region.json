@@ -1,0 +1,35 @@
+{
+  "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C",
+  "content": {
+    "wikiURL_ru":         ["const", "{url}"],
+    "wikiFlagURL":        ["prepend", "https:", "//span[@data-wikidata-property-id='P41[1]']//img/@src"],
+    "wikiArmsURL":        ["prepend", "https:", "//span[@data-wikidata-property-id='P94[1]']//img/@src"],
+    "wikiMapURL":         ["prepend", "https:", "//span[@data-wikidata-property-id='P242[1]']//img/@src"],
+    "name_ru":            "//h1[@id='firstHeading']",
+    "code":               "//table[@class='infobox']//a[text()='Код субъекта РФ']/ancestor::tr/td[2]",
+    "codeOKATO":          "//a[text()='Код ОКАТО']/ancestor::tr/*[2]//a",
+    "codeISO":            "//table[@class='infobox']//a[text()='Код по ISO 3166-2']/ancestor::tr/td[2]",
+    "timezone":           "//table[@class='infobox']//a[text()='Часовой пояс']/ancestor::tr/td[2]//a[last()]",
+    "capital_ru":         "//table[@class='infobox']/tr[5]/td[2]//a",
+    "wikiCapitalURL_ru":  ["prepend", "https://ru.wikipedia.org", "//table[@class='infobox']/tr[5]/td[2]//a/@href"],
+    "websiteURL":         "//table[@class='infobox']/tr[last()]/td[2]//a/@href",
+    "$name$":             ["prepend", "codeOKATO->code:", "{codeOKATO}"],
+    "$name":              ["default", "{$name$}", "//table[@class='infobox']//a[text()='Код субъекта РФ']/ancestor::tr/td[2]"]
+  },
+  "content-order": [
+    "wikiURL_ru",
+    "wikiFlagURL",
+    "wikiArmsURL",
+    "wikiMapURL",
+    "name_ru",
+    "code",
+    "codeOKATO",
+    "codeISO",
+    "timezone",
+    "capital_ru",
+    "wikiCapitalURL_ru",
+    "websiteURL",
+    "$name$",
+    "$name"
+  ]
+}
