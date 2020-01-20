@@ -5,13 +5,13 @@
 If you running app from IntelliJ IDEA, you config should be like this:
 ```
 Main class: com.fiftin.xpathcrawler.Main
-Program arguments: <path-to-xpathcrawler>/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json --parallel=10 --source-dump-dir=<path-to-dump-of-www.newegg.com>\Product
+Program arguments: <path-to-xpathcrawler>/src/test/resources/com/fiftin/xpathcrawler/newegg-single.json --parallel=10 --dir-DEPRECATED=<path-to-dump-of-www.newegg.com>\Product
 ```
 
 ## Import data from bhphotovideo.com
 ```
 Main class: com.fiftin.xpathcrawler.Main
-Program arguments: <path-to-xpathcrawler>/src/test/resources/com/fiftin/xpathcrawler/bhphotovideo-single.json --parallel=10 --source-dump-dir=<path-to-dump-of-www.bhphotovideo.com>\Product
+Program arguments: <path-to-xpathcrawler>/src/test/resources/com/fiftin/xpathcrawler/bhphotovideo-single.json --parallel=10 --dir-DEPRECATED=<path-to-dump-of-www.bhphotovideo.com>\Product
 ```
 
 

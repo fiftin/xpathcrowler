@@ -438,8 +438,10 @@ public class Crawler {
         int delayMillis = config.has("delay") ? config.getInt("delay") : delay;
         final Collection<String> fields = config.has("content-order") ? Util.toStringArray(config.getJSONArray("content-order")) : Util.collect(jContent.keys());
         if (writeHeader && !started) { // if is continuation (started is true) then printing header is not required
-            writer.writeHeader(fields);
+            var writableFields = fields.stream().filter(field -> !field.startsWith("$")).collect(Collectors.toList());
+            writer.writeHeader(writableFields);
         }
+
         for (final URL url : urls) {
             if (url.getPath().startsWith("/secure/download-partner-model")) {
                 continue;
@@ -659,12 +661,15 @@ public class Crawler {
                     values.set(i, values.get(i).trim());
                 }
             }
+
             content.add(Pair.create(fieldName, values));
         }
 
         final long startWritingMillis = System.currentTimeMillis();
         System.out.println("------ CRAWLING: " + (startWritingMillis - startMillis) + "ms");
-        final int ret = writer.write(content);
+
+        var writableContent = content.stream().filter(x -> !x.first.startsWith("$")).collect(Collectors.toList());
+        final int ret = writer.write(writableContent);
 
         System.out.println("------ SAVING: " + (System.currentTimeMillis() - startWritingMillis) + "ms");
 

@@ -72,6 +72,8 @@ public class Main {
                         req.columns,
                         req.filters,
                         req.mode, DriverManager.getConnection(db.connectionString, db.user, db.password));
+            }  else if (out.has("file")) {
+                writer = new CSVWriter(new PrintWriter(out.getString("file")));
             } else {
                 throw new RuntimeException("Unknown out type");
             }
@@ -133,11 +135,11 @@ public class Main {
                     case "--only-dump":
                         isOnlyDump = true;
                         break;
-                    case "--dest-dump-dir":
+                    case "--dump-root-dir":
                         dumpRoot = argValue;
                         break;
                     // TODO: what reasons to use this parameter?
-                    case "--source-dump-dir": // dir for importing
+                    case "--dir-DEPRECATED": // dir for importing
                         dir = argValue;
                         break;
                     // Use proxies. Default proxies will be used if pathname isn't specified.

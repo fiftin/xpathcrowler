@@ -5,25 +5,33 @@
     "colors": "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Цвет:']/ancestor::tr/td[2]",
     "patterns": "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Узор:']/ancestor::tr/td[2]",
     "country": "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Страна-изготовитель:']/ancestor::tr/td[2]",
-    "size": "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Размер рулона:']/ancestor::tr/td[2]",
+    "$size": "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Размер рулона:']/ancestor::tr/td[2]",
+    "size": ["default", "{$size}", "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Пропорции:']/ancestor::tr/td[2]"],
     "docking": "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Стыковка:']/ancestor::tr/td[2]",
     "patternRepeat": "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Повтор рисунка:']/ancestor::tr/td[2]",
     "material": "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Основа:']/ancestor::tr/td[2]",
     "brand": "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Производитель:']/ancestor::tr/td[2]",
     "ecoFriendly": "//div[@id='tab-additional_information']//table[@class='shop_attributes']//td[text()='Экологичные:']/ancestor::tr/td[2]",
-    "price": "//div[@itemprop='offers']//li[@id='price']//span[2]/text()[normalize-space()]"
+    "$price": "//div[@itemprop='offers']//li[@id='price']//span[1]/text()[normalize-space()]",
+    "price": ["default", "{$price}", "//div[@itemprop='offers']//li[@id='price']//span[2]/text()[normalize-space()]"],
+    "texture": "//div[@class='images']//a[@itemprop='image']/@href",
+    "images": "//div[@class='images']//a[@itemprop='image']/@href"
   },
   "content-order": [
     "url",
     "colors",
     "patterns",
     "country",
+    "$size",
     "size",
     "docking",
     "patternRepeat",
     "material",
     "brand",
     "ecoFriendly",
-    "price"
+    "$price",
+    "price",
+    "texture",
+    "images"
   ]
 }

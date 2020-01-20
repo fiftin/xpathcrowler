@@ -10,6 +10,8 @@
       "link-path": "//div[@class='easycontainer easymedia_center emgclearfix']//a[@class='hmore']",
       "include-content": "/Users/fiftin/src/rem3d/xpathcrowler/src/test/resources/com/fiftin/xpathcrawler/odesign-single.json"
     }
+  },
+  "out": {
+    "file": "/Users/fiftin/src/rem3d/odesign.csv"
   }
-
 }
