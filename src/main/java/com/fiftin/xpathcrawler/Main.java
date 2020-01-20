@@ -133,11 +133,11 @@ public class Main {
                     case "--only-dump":
                         isOnlyDump = true;
                         break;
-                    case "--dump-root":
+                    case "--dest-dump-dir":
                         dumpRoot = argValue;
                         break;
                     // TODO: what reasons to use this parameter?
-                    case "--dir":
+                    case "--source-dump-dir": // dir for importing
                         dir = argValue;
                         break;
                     // Use proxies. Default proxies will be used if pathname isn't specified.

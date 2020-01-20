@@ -1,0 +1,15 @@
+{
+  "start-index" : 1,
+  "end-index" : 1,
+  "url": {
+    "source-url": "https://odesign.ru/eco-wallpaper/",
+    "link-path": "//div[@class='easycontainer easymedia_center emgclearfix']//a",
+    "start-index" : 1,
+    "end-index" : 1,
+    "url": {
+      "link-path": "//div[@class='easycontainer easymedia_center emgclearfix']//a[@class='hmore']",
+      "include-content": "/Users/fiftin/src/rem3d/xpathcrowler/src/test/resources/com/fiftin/xpathcrawler/odesign-single.json"
+    }
+  }
+
+}
